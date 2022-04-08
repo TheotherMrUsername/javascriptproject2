@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawesome and google fonts links-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/> 
+    <title>Match The Cards!</title>
+</head>
+<body>
+    <h1 class="heading">
+        <img class="logo" src="assets/images/logo.png" alt="">Card Game
+    </h1>
+    <h5 class="heading2">Can you match the cards?</h5>
+
+    <div class="game-area">
+        <div class="controlls-area">
+            <button data-type=start class="btn btn--green">
+                Start
+                <i class="fas fa-start"></i>
+            </button>
+        </div>
+        
+        <div id="grid">
+                <div class="card" style= "background-color: darkgreen;" >1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
+                <div class="card">7</div>
+                <div class="card">8</div>
+                <div class="card">9</div>
+                <div class="card">10</div>
+        </div>
+        
+       
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    </div>
+
+
+    <script src="assets/js/script.js"> </script>
+</body>
+</html>
