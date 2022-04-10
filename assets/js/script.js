@@ -1,11 +1,11 @@
-/** 
+
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
-
+		
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") == "start"){
-                runGame("gameStart");
+                
             
             }
         })
@@ -13,23 +13,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
     
 
-    runGame("gameStart");
+    
 })
-*/
-
-let gameStart = 
-//pick 5 colors assign them to an Array
 
 
-//randomise the array 
-
-function shuffle(array) {
+ function shuffle(Array) {
     cardArray.sort(() => Math.random() - 0.5);
 }
 
-let cardArray = [blue, yellow, green, red, black];
+let cardArray = ["blue", "yellow", "green", "red", "black"];
 shuffle(cardArray);
-alert(cardArray);
+
+console.log(cardArray);
 
 //assign the colors to 2 cards each
 
@@ -41,15 +36,30 @@ let pair5 = cardArray[4]
 
 //append.css(random) wait 4seconds 
 //
-let pairArray = [pair1, pair2, pair3, pair4, pair5];
+let pairArray 
+
+pairArray = [pair1, pair2, pair3, pair4, pair5];
+
+for(let i = 0; i < pairArray.length; i++){
+    console.log(pairArray[i])
+    let color = document.getElementsByClassName("card")
+        color.style.backgroundColor(pairArray[i])
+    }
+
+//want to do a loop in a loop so that the divs with the class cards have pair1 assigned twice before moviung on to the next pair. 
+//for pairs in pairArray{
+ //   let i = 0; if i < 2; i++;
+   // $('div').document.getelementsbyClassName('card').next;
+
+//}
+//cycle through the arrays and console log the results
 
 
-//want to do a loop in a loop so that the divs with the calss cards have pair1 assigned twice before moviung on to the next pair. 
-for pairs in pairArray{
-    let i = 0 if i < 2 i++
-    $('div').document.getelementsbyClassName('card');
+//assign pair array into the divs twice each 
 
-}
+
+
+
 
 
 //function assignColor(){
@@ -64,15 +74,15 @@ for pairs in pairArray{
 //let cardElements = document.getElementsByClassName("card")
 //for(let i = 0; i < cardArray.length; i++) {cardElementsArray[i].addEventListener("click", displayCard)}
 
-
-let card = document.getElementById("grid>div");
+let card = document.getElementsByClassName("card");
 
 function changeBorder() {
     card.style.borderColor = "red";
 }
 
 function changeBackground() {
-    card.style.backgroundColor = ("blue");
+    card.style.backgroundColor = ("");
+   
 }
 
 function revertBack() {
@@ -83,8 +93,21 @@ function revertBack() {
 card.addEventListener('click', changeBorder);
 card.addEventListener('click', changeBackground);
 card.addEventListener('mouseleave', revertBack);
+    
+  
 
 
+
+function checkValue(){
+  if (storedValue == secondValue) {
+	alert("Plus 1!")
+  score++
+  } else {
+  	revertBack
+  }
+  check.addEventListener('click', checkValue)
+}
+  
 
 //reset colors 
 //** */  

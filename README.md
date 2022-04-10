@@ -10,5 +10,7 @@ I wanted to use a font awesome start button but so far have been unable to make 
 
 I have tried to use code from Code Institute challenges to change the card border to red when clicked and to change the card color. So far this has not worked. 
 
-I need asign a random color selection from an array and pair the cards in order to match them and increase the score. 
+I need to asign a random color selection from an array and pair the cards in order to match them and increase the score. 
+
+The code seems to work in a different IDE but not on Gitpod. 
 
