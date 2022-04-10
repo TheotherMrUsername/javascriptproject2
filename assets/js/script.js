@@ -94,9 +94,24 @@ card.addEventListener('click', changeBorder);
 card.addEventListener('click', changeBackground);
 card.addEventListener('mouseleave', revertBack);
     
-  
 
+let storedValue = []
+let secondValue = []
 
+// cannot figure this out 
+
+let Values = document.getElementsByClassName("card");
+function cardClicked(event) {
+        if (storedValue == [] ){
+            storedValue = this.cardClicked;
+        } else if(secondValue == []){
+            secondValue = this.cardClicked;
+            checkValue;
+        }
+}
+for (i = 0; i < change.length; i++){
+    change[i].addEventListener("click", cardClicked);
+}
 
 function checkValue(){
   if (storedValue == secondValue) {
@@ -133,4 +148,3 @@ function checkValue(){
 //when all cards are matched then displaymessage well done
 //function(win){
 
-//}
