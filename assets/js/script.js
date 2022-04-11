@@ -1,3 +1,6 @@
+//take the love maths challenge, rip out the maths game and use the game space to place the card grid. 
+//remove three buttons and change the remaining one to a start button. 
+
 
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
@@ -38,14 +41,25 @@ let pair5 = cardArray[4]
 //
 let pairArray 
 
-pairArray = [pair1, pair2, pair3, pair4, pair5];
+pairArray = [pair1, pair2, pair3, pair4, pair5, pair1, pair2, pair3, pair4, pair5];
 
 for(let i = 0; i < pairArray.length; i++){
     console.log(pairArray[i])
-    let color = document.getElementsByClassName("card")
-        color.style.backgroundColor(pairArray[i])
+    
+    const color = Array.from(document.querySelectorAll(".card")  //line provided on slack 
+   
+    for(let j = 0; j < color.length; j++){
+     console.log(color[j]);
+     color.style.backgroundColor(pairArray[i]) 
+    }
+    
+    //let color = document.getElementsByClassName("card")
+        //color.style.backgroundColor(pairArray[i])
     }
 
+ 
+
+//
 //want to do a loop in a loop so that the divs with the class cards have pair1 assigned twice before moviung on to the next pair. 
 //for pairs in pairArray{
  //   let i = 0; if i < 2; i++;
@@ -81,7 +95,7 @@ function changeBorder() {
 }
 
 function changeBackground() {
-    card.style.backgroundColor = ("");
+    card.style.backgroundColor = ("pairArray");
    
 }
 

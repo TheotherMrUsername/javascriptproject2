@@ -26,6 +26,6 @@ I want to chage each div
  "TypeError: card.addEventListener is not a function" in JSFiddle.
 
 
-
-
+I have failed to loop through the divs displaying the cards in order to assign them new colours from the cardArray. 
+I cannot figure out what the correct syntax is supposed to be. 
 
